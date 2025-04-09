@@ -24,7 +24,7 @@ session_data = {}
 
 @app.route('/')
 def index():
-    return send_from_directory('.', 'index.html')
+    return send_from_directory('index.html')
 
 @app.route('/upload', methods=['POST'])
 def upload_file():
